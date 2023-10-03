@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    {% block body_block %}
+
+    <h1>Sign Up</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="signup">
+    </form>
+
+    {% endblock %}
+</body>
+</html>

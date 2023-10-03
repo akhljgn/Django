@@ -1,0 +1,95 @@
+.body{
+    background-color: #fff;
+    margin: 0;
+}
+
+.top{
+    color: #fff;
+    background-color: #212934;
+}
+.mm li a{
+    text-decoration: none;
+    color: white;
+}
+.mm li ion-icon{
+    padding-top: 12px;
+    text-decoration: none;
+    color: white;
+}
+.a2 li ion-icon{
+    padding-top: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.ab2 li ion-icon{
+    width: 20px;
+    height: 20px;
+    color: black;
+    padding: 10px 10px;
+}
+
+.a1{
+    display: flex;
+    justify-content: space-between;
+}
+.a2 li{
+    padding-top: 5px;
+    padding-left: 15px;    
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.div h1{
+    color: rgb(16, 191, 147);
+}
+
+.b8{
+    background-color: #212934;
+}
+
+.b9 h1{
+    color: rgb(16, 191, 147);
+    text-decoration: none;
+}
+.b10 h1{
+    color: white;
+    text-decoration: none;
+}
+ 
+.b9 a, .b10 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.o0{
+    color: white;
+}
+ 
+.b9 a:hover, .b10 a:hover{
+    text-decoration: none;
+    color: rgb(16, 191, 147);
+}
+
+.g19 ion-icon{
+    color: #fff;
+    padding: 0 15px;
+    font-size: 2em;
+    border: .2px solid grey;
+    border-radius: 50%;
+}
+
+.g19 ion-icon:hover{
+    background-color: white;
+    color: #212934;
+}
+.b33{
+    text-align: center;
+    background-color: #212934;
+    color: aliceblue;
+    
+}
+

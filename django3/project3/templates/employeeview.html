@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>View employee</title>
+</head>
+<body>
+    {% block content %}
+    <br><br>
+    <label>Name:</label>
+    <label>{{ employee.name }}</label><br>
+    <label>Age:</label>
+    <label>{{ employee.age }}</label><br>
+    <label>Email:</label>
+    <label>{{ employee.email }}</label><br>
+    <label>Phone:</label>
+    <label>{{ employee.phone }}</label><br>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+<body>
+    {% block content %}
+    {% for book in shelf %}
+    <img src="{{ book.picture.url }}" alt="img" height="300" width="250">
+        <h5>{{ book.name }}</h5>
+        <p>{{ book.describe }}</p>
+        <p>{{ book.author }}</p>
+    {% endfor %}
+    {% endblock %}
+</body>
+</html>

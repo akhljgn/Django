@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Employee</title>
+</head>
+<body>
+    {% block content %}
+    <br>
+    {% for i in employee %}
+    {{i.name}}
+    {{i.age}}
+    {{i.email}}
+    {{i.phone}}
+    <a href="{% url 'empview' i.id %}">View</a>
+    <a href="{% url 'editemp' i.id %}">Edit</a>
+    <a href="{% url 'empdelete' i.id %}">Delete</a>
+    <br>
+    {% endfor %}
+    {% endblock %}
+</body>
+</html>
