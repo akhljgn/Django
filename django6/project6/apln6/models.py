@@ -7,3 +7,9 @@ class Book(models.Model):
     author = models.CharField(max_length=30, default='Anonymous')
     email = models.EmailField(blank=True)
     describe = models.TextField(default='Data flair tutorial')
+
+
+class user(models.Model):
+    username = models.CharField(max_length=25)
+    email = models.EmailField(max_length=255)
+    password = models.CharField(max_length=255)

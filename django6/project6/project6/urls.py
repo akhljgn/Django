@@ -24,7 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("index/", views.index, name="index"),
     path("view/", views.upload, name="upload"),
-    path("", views.login, name="login"),
+    path("login/", views.loginpage, name="loginpage"),
+    path("", views.homepage, name="homepage"),
+    path("logout/", views.userlogoout, name="userlogout"),
 ]
 
 if DEBUG:
