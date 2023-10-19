@@ -20,5 +20,8 @@ from apln7 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.drag, name="drag"),
+    path("", views.home, name="home"),
+    path("drag/", views.drag, name="drag"),
+    path("signin/", views.signin, name="signin"),
+    path("signup/", views.signup, name="signup"),
 ]

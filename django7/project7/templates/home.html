@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Document</title>
 </head>
 <body>
     {% extends "base.html" %}
     {% block content %}
 
-    <h1>Sign Up</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="signup">
-    </form>
+    <h1>Welcome to Home page</h1>
+    {% if user.is_authenticated %}
+    {{ user.username }}
+    {% else %}
+    <p>visitor</p>
+    {% endif %}
     {% endblock %}
 </body>
 </html>
