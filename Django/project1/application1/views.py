@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from application1.models import student
 from application1.forms import studentForm
+
 # Create your views here.
 
 def home(request):
